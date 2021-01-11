@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Parvez Khan">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript Steroids</title>
+	<link rel="stylesheet" type="text/css" href="asset/css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="asset/css/all.css"/>
+	<link rel="stylesheet" type="text/css" href="asset/css/bootstrap.min.css"/>
+</head>
+<body>
+
+<div class="container">
+	<section>
+		<div id="first_challenge">
+			<h2>Challenge One: Your age in days</h2>
+			<div class="one_field">
+				<button class="btn btn-primary" onclick="myfunction_start()">Start</button>
+				<button class="btn btn-danger" onclick="myfunction_reset()">Reset</button>
+			</div>
+			<div id="add_value">
+				
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="second_challenge">
+			<h2>Challenge Tow: Frog Generator</h2>
+			<div class="one_field" id="frog_btn">
+				<button class="btn btn-success" onclick="frogGen_click()">Generate</button>
+				<button class="btn btn-warning" onclick="frogReset()">Reset</button>
+			</div>
+			<div id="frog_img">
+				
+			</div>
+		</div>
+	</section>
+	<section>
+		<div id="third_challenge">
+			<h2>Challenge Three: Rock, Paper, Scissore</h2>
+			<div class="one_field">
+				<img id="rock" src="image/1.png" class="img-fluid" onclick="rpsClick(this)">
+				<img id="paper" src="image/2.png" class="img-fluid" onclick="rpsClick(this)">
+				<img id="scissors" src="image/3.png" class="img-fluid" onclick="rpsClick(this)">
+			</div>
+		</div>
+	</section>
+	<section>
+		<div id="fourth_challenge">
+			<h2>Challenge Four: Change all of the color buttons</h2>
+			<div class="one_field">
+				<div>
+					<select onchange="BtnChange_color(this)">
+						<option disabled selected>Choose a button...</option>
+						<option value="red">Red</option>
+						<option value="green">Green</option>
+						<option value="blue">Blue</option>
+						<option value="random">Random</option>
+						<option value="reset">Reset</option>
+					</select>
+				</div>
+				<button class="btn btn-warning">Wee!</button>
+				<button class="btn btn-danger">Yahoo!</button>
+				<button class="btn btn-success">Google</button>
+				<button class="btn btn-primary">Facebook</button>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div id="fifth_challenge">
+			<h2>Fifth Challenge: Blackjackgame</h2>
+			<h1 id="game_intro">Let's Play</h1>
+			<div class="one_field">
+				<div class="box" id="Your_box">
+					<h3>You: <span id="Your_result">0</span></h3>
+				</div>
+				<div class="box" id="Dealer_box">
+					<h3>Dealer: <span id="Dealer_result">0</span></h3>
+				</div>
+				<div class="box">
+					<button class="btn btn-primary" id="hitBtn">Hit</button>
+					<button class="btn btn-warning" id="standBtn">Stand</button>
+					<button class="btn btn-danger" id="dealBtn">Deal</button>
+				</div>
+			</div>
+			<div class="result_table">
+				<table>
+					<tr>
+						<th>Wins</th>
+						<th>Losses</th>
+						<th>Draws</th>
+					</tr>
+					<tr>
+						<td id="Wins">0</td>
+						<td id="Losses">0</td>
+						<td id="Draws">0</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</section>
+</div>
+
+<script src="asset/js/myscript.js"></script>
+</body>
+</html>
